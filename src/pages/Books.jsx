@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, push } from "firebase/database";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCvgpngfod6RpetJJMjVWkv8c26Xx4BuBQ",

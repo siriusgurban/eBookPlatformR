@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, get, update } from "firebase/database";
+import { getDatabase, ref, get,  } from "firebase/database";
 import { useState, useEffect } from "react";
 import Spinner from "../Spinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,4 +1,3 @@
-import Spinner from "react-bootstrap/Spinner";
 import ScaleLoader from "react-spinners/ScaleLoader";
 
 function BorderExample() {

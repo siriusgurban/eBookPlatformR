@@ -19,21 +19,18 @@ const database = getDatabase(app);
 
 function NavBar() {
   const [list, setList] = useState("");
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function readData(path) {
       try {
-        setLoading(true);
+        
         console.log(".....");
 
         const dataRef = ref(database, path);
         setList(await get(dataRef).then((snapshot) => snapshot.val()));
       } catch (error) {
         console.log(error);
-      } finally {
-        setLoading(false);
-      }
+      } 
     }
     readData("books");
   }, []);
